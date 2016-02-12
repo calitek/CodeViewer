@@ -1,0 +1,46 @@
+{
+  "name": "CodeViewer",
+  "version": "1.0.0",
+  "description": "A project viewer app.",
+  "license": "MIT",
+  "main": "main.js",
+  "author": {
+    "name": "Janaka Stevens",
+    "email": "jmstevens@calitek.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calitek/CodeViewer.git"
+  },
+  "scripts": { "start": "node js/server.js" },
+  "dependencies": {
+    "async": "latest",
+    "express": "latest",
+    "highlight.js": "latest",
+    "lodash": "latest",
+    "marked": "latest",
+    "primus": "latest",
+    "primus-emitter": "latest",
+    "react-remarkable": "latest",
+    "serve-favicon": "latest",
+    "ws": "latest"
+  },
+  "devDependencies": {
+    "babelify": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-stage-0": "latest",
+    "babel-preset-react": "latest",
+    "babel-plugin-syntax-class-properties": "latest",
+    "babel-plugin-transform-class-properties": "latest",
+    "browserify": "latest",
+    "electron-prebuilt": "*",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-shell": "latest",
+    "react": "^0.14",
+    "react-dom": "^0.14",
+    "reflux": "latest",
+    "traverse": "latest",
+    "vinyl-source-stream": "latest"
+  }
+}
