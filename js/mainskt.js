@@ -5,7 +5,7 @@ let readTree = require('./routes/readTree');
 
 module.exports = function(socket) {
 
-  let onReadTree = function() { readTree.readTree(null, onGetFileList); };
+  let onReadTree = function() { readTree(null, onGetFileList); };
   socket.on('client:readTree', onReadTree);
 
   let getFileDone = function(event, data){ socket.send('server:GotFile', null, data); };

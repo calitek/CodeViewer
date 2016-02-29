@@ -8,6 +8,9 @@ let config = require('../../config.json');
 let dataRoot = config.readRoot2;
 let dataRootLength = dataRoot.length;
 
+var rootDataPath = config.macDataRoot;
+if (process.platform == 'win32') rootDataPath = config.winDataRoot;
+
 function getOrderedFileList(fileList, listFolder) {
   let dirs = [];
   let files = [];
@@ -26,7 +29,7 @@ function getOrderedFileList(fileList, listFolder) {
   return outDir;
 }
 
-function readTree(event, readTreeDone) {
+module.exports = function(event, readTreeDone) {
 
   let isDirOk = function(fileName, filePath) {
     let returnIt;
@@ -112,7 +115,7 @@ function readTree(event, readTreeDone) {
   };
 
   let getFileListDone = function(fileList) {
-    let filePath = './data/filelist.json';
+    let filePath = rootDataPath + '/filelist.json';
     let writeFileCallBack = function (err) {
       if (err) console.log('error saving fileList');
       console.log('fileList saved');
@@ -124,4 +127,4 @@ function readTree(event, readTreeDone) {
   getFileList(dataRoot, getFileListDone);
 }
 
-module.exports.readTree = readTree;
+// module.exports.readTree = readTree;

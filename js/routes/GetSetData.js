@@ -25,7 +25,7 @@ let md = new Remarkable({
   }
 });
 
-let getFile = function(event, clientData, doneCallBack) {
+module.exports.getFile = function(event, clientData, doneCallBack) {
   let fileReadCallBack = function(err, data){
     if (err) doneCallBack(event, {note: 'error'});
     else {
@@ -42,7 +42,7 @@ let getFile = function(event, clientData, doneCallBack) {
   fs.readFile(clientData.filePath, fileReadCallBack);
 };
 
-let getFileList = function(event, doneCallBack) {
+module.exports.getFileList = function(event, doneCallBack) {
   let filePath = rootDataPath + '/filelist.json';
   let jsonReadCallBack = function(err, data){
     if (err) doneCallBack(event, 'Data readFile error ' + filePath);
@@ -54,14 +54,10 @@ let getFileList = function(event, doneCallBack) {
   fs.readFile(filePath, jsonReadCallBack);
 };
 
-let setFileList = function(data) {
+module.exports.setFileList = function(data) {
   let filePath = rootDataPath + '/filelist.json';
   let writeFileCallBack = function (err) {
     if (err) console.log('error saving Data.json file ');
   };
   fs.writeFile(filePath, JSON.stringify(data, null, 2), writeFileCallBack);
 };
-
-module.exports.getFile = getFile;
-module.exports.getFileList = getFileList;
-module.exports.setFileList = setFileList;

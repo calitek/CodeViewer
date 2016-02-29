@@ -2,7 +2,7 @@ import React from 'react';
 
 let FileCtrlSty = {
   height: '100%',
-  marginBottom: '20px',
+  marginBottom: '5%',
   width: '100%'
 };
 
