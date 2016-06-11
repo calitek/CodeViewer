@@ -7,7 +7,7 @@ import FileViewStore from '../stores/FileView.Store';
 let FileViewCtrlRenderSty = {
   height: '100%',
   margin: '5px 20px',
-  width: '75%'
+  width: '100%'
 };
 
 class FileViewCtrlRender extends React.Component {

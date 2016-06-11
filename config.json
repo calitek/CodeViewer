@@ -1,7 +1,15 @@
 {
-  "readRoot1": "/var/www/",
-	"readRoot2": "/Users/janaka/Kykas/Projects/",
-  "winDataRoot": "K:/Projects/CodeViewer/data/",
-  "macDataRoot": "/Users/janaka/Kykas/Projects/CodeViewer/data/",
-	"winProjectRoot": "K:/Projects/CodeViewer"
+  "darwin": {
+    "readRoot": "/Users/janaka/Kykas/Projects/",
+    "dataRoot": "/Users/janaka/Kykas/Projects/CodeViewer/data/"
+  },
+  "linux": {
+    "readRoot": "/var/www/CodeView/",
+    "dataRoot": "/var/www/CodeView/CodeViewer/data/"
+  },
+  "win32": {
+    "readRoot": "/Users/janaka/Kykas/Projects/",
+    "dataRoot": "K:/Projects/CodeViewer/data/"
+  },
+  "winProjectRoot": "K:/Projects/CodeViewer"
 }

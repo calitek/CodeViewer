@@ -12,35 +12,55 @@
     "type": "git",
     "url": "git+https://github.com/calitek/CodeViewer.git"
   },
-  "scripts": { "start": "node js/server.js" },
+  "scripts": {
+    "start": "nodemon js/server.js",
+    "test": "jest",
+    "ww": "webpack --progress --profile --colors --watch",
+    "nw": "webpack --progress --profile --colors"
+  },
   "dependencies": {
     "async": "latest",
     "express": "latest",
     "highlight.js": "latest",
+    "js-yaml": "latest",
     "lodash": "latest",
     "marked": "latest",
     "primus": "latest",
     "primus-emitter": "latest",
-    "react-remarkable": "latest",
     "serve-favicon": "latest",
+    "underscore.string": "latest",
     "ws": "latest"
   },
   "devDependencies": {
-    "babelify": "latest",
+    "babel-core": "latest",
+    "babel-jest": "latest",
+    "babel-loader": "^6.1.0",
     "babel-preset-es2015": "latest",
     "babel-preset-stage-0": "latest",
     "babel-preset-react": "latest",
-    "babel-plugin-syntax-class-properties": "latest",
-    "babel-plugin-transform-class-properties": "latest",
-    "browserify": "latest",
+    "css-loader": "latest",
     "electron-prebuilt": "*",
+    "enzyme": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "file-loader": "latest",
     "gulp": "latest",
-    "gulp-concat": "latest",
     "gulp-shell": "latest",
-    "react": "^0.14",
-    "react-dom": "^0.14",
+    "jest-cli": "latest",
+    "react-addons-test-utils": "^15.0.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-remarkable": "latest",
     "reflux": "latest",
     "traverse": "latest",
-    "vinyl-source-stream": "latest"
+    "webpack": "latest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "enzyme",
+      "react",
+      "react-addons-test-utils"
+    ],
+    "verbose": true
   }
 }

@@ -8,10 +8,10 @@ let ApiStoreObject = {
   savedFileList: [{}],
   listenables: Actions,
   isIpc: true,
-	apiInit(api) {
-		if (api == 'ipc') ApiFct.ipcInit();
-		else {this.isIpc = false; ApiFct.wsInit();}
-	},
+  apiInit(api) {
+    if (api == 'ipc') ApiFct.ipcInit();
+    else {this.isIpc = false; ApiFct.wsInit();}
+  },
   apiInitDone() { ApiFct.getFileList(); },
   apiSetFileList(data) { ApiFct.setFileList(data); },
   apiSaveFileList(data) { this.savedFileList = data; },

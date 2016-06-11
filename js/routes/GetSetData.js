@@ -4,10 +4,15 @@ let fs = require('fs');
 let Remarkable = require('remarkable');
 let hljs       = require('highlight.js');
 let lodash = require('lodash');
-var config = require('../../config.json');
+let config = require('../../config.json');
 
-var rootDataPath = config.macDataRoot;
-if (process.platform == 'win32') rootDataPath = config.winDataRoot;
+let configRoot;
+switch (process.platform) {
+  case 'darwin': configRoot = config.darwin; break;
+  case 'linux': configRoot = config.linux; break;
+  case 'win32': configRoot = config.win32; break;
+}
+let dataRoot = configRoot.dataRoot;
 
 let md = new Remarkable({
   highlight: function (str, lang) {
@@ -43,7 +48,7 @@ module.exports.getFile = function(event, clientData, doneCallBack) {
 };
 
 module.exports.getFileList = function(event, doneCallBack) {
-  let filePath = rootDataPath + '/filelist.json';
+  let filePath = dataRoot + '/filelist.json';
   let jsonReadCallBack = function(err, data){
     if (err) doneCallBack(event, 'Data readFile error ' + filePath);
     else {
@@ -55,7 +60,7 @@ module.exports.getFileList = function(event, doneCallBack) {
 };
 
 module.exports.setFileList = function(data) {
-  let filePath = rootDataPath + '/filelist.json';
+  let filePath = dataRoot + '/filelist.json';
   let writeFileCallBack = function (err) {
     if (err) console.log('error saving Data.json file ');
   };

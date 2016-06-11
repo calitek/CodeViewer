@@ -6,29 +6,31 @@ import flActions from '../actions/fl.Actions';
 import saActions from '../actions/sa.Actions';
 import apiActions from '../actions/api.Actions';
 
-let _fileList = [];
-let _currentTreeNode = {};
+let _treeData = {
+  data: [],
+  currentTreeNode: {}
+}
 
 function _gotFileList(fileList) {
-  _fileList = fileList;
-  _currentTreeNode = _getSelected(fileList);
-  if (_currentTreeNode == null) _currentTreeNode = fileList[0];
+  _treeData.data = fileList;
+  _treeData.currentTreeNode = _getSelected(fileList);
+  if (_treeData.currentTreeNode == null) _treeData.currentTreeNode = fileList[0];
   FileListStore.trigger();
 }
 
-function _setfileList() { apiActions.apiSetFileList(_fileList); }
+function _setfileList() { apiActions.apiSetFileList(_treeData.data); }
 
 function _getSelected(tree) {
   let result = null;
   lodash.each(tree, function(node) {
     if (node.selected) result = node;
-    if(result == null && node.children.length > 0) result = _getSelected(node.children);
+    if(result === null && (node.children && node.children.length > 0)) result = _getSelected(node.children);
   });
   return result;
 }
 
 function _getNodeIndex(treeNode) {
-  let fileList = _fileList;
+  let fileList = _treeData.data;
   let nodeID = treeNode.nodeid;
   if (lodash.isEmpty(nodeID)) { return []; }
 
@@ -58,13 +60,13 @@ function _getNodeIndex(treeNode) {
 }
 
 function _selectTreeNode(treeNode) {
-  let nodeIndex1 = _getNodeIndex(_currentTreeNode);
+  let nodeIndex1 = _getNodeIndex(_treeData.currentTreeNode);
   nodeIndex1.push('selected');
-  traverse(_fileList).set(nodeIndex1, false);
-  _currentTreeNode = treeNode;
-  let nodeIndex2 = _getNodeIndex(_currentTreeNode);
+  traverse(_treeData.data).set(nodeIndex1, false);
+  _treeData.currentTreeNode = treeNode;
+  let nodeIndex2 = _getNodeIndex(_treeData.currentTreeNode);
   nodeIndex2.push('selected');
-  traverse(_fileList).set(nodeIndex2, true);
+  traverse(_treeData.data).set(nodeIndex2, true);
 
   FileListStore.trigger();
   if (treeNode.children.length > 0) {
@@ -72,7 +74,7 @@ function _selectTreeNode(treeNode) {
     saActions.gotFile({fileData: '', noteData: {note: '', nodeid: ''}});
   } else {
     let filePath = treeNode.rootpath + treeNode.nodeid;
-    apiActions.apiSaveFileList(_fileList);
+    apiActions.apiSaveFileList(_treeData.data);
     apiActions.apiGetFile({filePath: filePath, nodeid: treeNode.nodeid});
   }
 }
@@ -80,11 +82,11 @@ function _selectTreeNode(treeNode) {
 function _setTreeNodeClosed(treeNode) {
   let nodeIndex = _getNodeIndex(treeNode);
   nodeIndex.push('closed');
-  let visible = traverse(_fileList).get(nodeIndex);
+  let visible = traverse(_treeData.data).get(nodeIndex);
   if (typeof visible === 'undefined') visible = false;
   else visible = !visible;
-  if (visible) traverse(_fileList).set(nodeIndex, true);
-  else traverse(_fileList).set(nodeIndex, false);
+  if (visible) traverse(_treeData.data).set(nodeIndex, true);
+  else traverse(_treeData.data).set(nodeIndex, false);
 
   FileListStore.trigger();
   _setfileList();
@@ -103,8 +105,7 @@ let FileListStoreObject = {
   onSelectTreeNode: _selectTreeNode,
   onSetTreeNodeClosed: _setTreeNodeClosed,
 
-  getFileList() { return _fileList; },
-  getCurrentTreeNode() { return _currentTreeNode; }
+  getTreeData() { return _treeData; }
 }
 const FileListStore = Reflux.createStore(FileListStoreObject);
 export default FileListStore;

@@ -16,7 +16,7 @@ let nottogglable = {
 let togglable = {
   color: '#815C7C',
   cursor: 'pointer',
-  margin: '0'
+  margin: '0px'
 };
 
 let options = {};
@@ -26,7 +26,6 @@ let getTreeNode = function(child, index) {
 };
 
 class JTreeViewNode extends React.Component {
-  constructor(props) { super(); }
   iconHandler = () => {
     if (this.props.node.children && this.props.node.children.length > 0) {
       this.props.iconClick(this.props.node);
@@ -59,10 +58,10 @@ class JTreeViewNode extends React.Component {
 
     let props = this.props;
     let iconType = lodashGet(props, options.typeName);
-    if (iconType == options.icon.sun) iconSty.background = "url('./img/sun.ico') 0/16px no-repeat !important";
-    else if (iconType == options.icon.leaf) iconSty.background = "url('./img/leaf.ico') 0/16px no-repeat !important";
-    else if (iconType == options.icon.snow) iconSty.background = "url('./img/snow.ico') 0/16px no-repeat !important";
-    else iconSty.background = "url('./img/sun.ico') 0/16px no-repeat !important";
+    if (iconType == options.icon.sun) iconSty.background = "url('./img/sun.ico') 0/16px no-repeat";
+    else if (iconType == options.icon.leaf) iconSty.background = "url('./img/leaf.ico') 0/16px no-repeat";
+    else if (iconType == options.icon.snow) iconSty.background = "url('./img/snow.ico') 0/16px no-repeat";
+    else iconSty.background = "url('./img/sun.ico') 0/16px no-repeat";
 
     return (
       <div id='TreeNode'>

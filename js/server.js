@@ -16,12 +16,6 @@ let server = app.listen(port);
 let sio = new Primus(server, { transformer: 'websockets', parser: 'JSON' });
 sio.use('emitter', Emitter);
 
-let newPrimusOptions = false;
-if (newPrimusOptions) {
-	sio.library();
-	sio.save('./ui-src/lib/primus/primus.js');
-}
-
 sio.on('connection', socketCallBack);
 
 app.use('/', express.static('ui-dist'));

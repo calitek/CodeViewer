@@ -1,5 +1,14 @@
 'use strict';
 
+require("./index.html");
+require("./css/index.css");
+require("./img/favicon.ico");
+require("./img/fire.ico");
+require("./img/leaf.ico");
+require("./img/moon.ico");
+require("./img/snow.ico");
+require("./img/sun.ico");
+
 import React  from 'react';
 import ReactDom  from 'react-dom';
 
@@ -9,8 +18,8 @@ import ApiStore from './stores/Api.Store';
 
 window.ReactDom = ReactDom;
 
-Actions.apiInit('ipc');
-// Actions.apiInit('ws');
+// Actions.apiInit('ipc');
+Actions.apiInit('ws');
 
 ReactDom.render( <AppCtrl />, document.getElementById('react') );
 
