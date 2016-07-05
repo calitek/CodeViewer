@@ -8,7 +8,7 @@ let path = require('path');
 let Primus = require('primus');
 let socketCallBack = function(socket){ require('./mainskt.js')(socket); };
 
-let port = Number(process.env.PORT38 || 3800);
+let port = Number(process.env.CODEVIEWERPORT || 3800);
 
 let app = express();
 let server = app.listen(port);

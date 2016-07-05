@@ -8,20 +8,13 @@ let AppCtrlSty = {
   padding: '0 10px 0 0'
 }
 
-const getState = () => {
-  return {
-    FileList: FileStore.getFileList(),
-    FileView: FileStore.getFileView()
-  };
-};
-
 export default class AppCtrl extends React.Component {
    render() {
     return (
       <div id='AppCtrlSty' style={AppCtrlSty}>
         <div className='FlexBox' style={{height: 'calc(100% - 20px)'}}>
-          <TreeView/>
-          <FileView/>
+          <TreeView />
+          <FileView />
         </div>
       </div>
     );

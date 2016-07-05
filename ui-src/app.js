@@ -1,6 +1,7 @@
 'use strict';
 
 require("./index.html");
+require("./css/darkula.css");
 require("./css/index.css");
 require("./img/favicon.ico");
 require("./img/fire.ico");

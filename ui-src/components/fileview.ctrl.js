@@ -26,11 +26,8 @@ function getState() {
   };
 }
 
-export default class FileViewCtrl extends FileViewCtrlRender {
-  constructor() {
-    super();
-    this.state = getState();
-  }
+export default class FileView extends FileViewCtrlRender {
+  state = getState();
 
   componentDidMount = () => { this.unsubscribe = FileViewStore.listen(this.storeDidChange); };
   componentWillUnmount = () => { this.unsubscribe(); };

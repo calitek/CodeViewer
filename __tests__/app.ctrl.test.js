@@ -1,23 +1,20 @@
 "use strict";
 
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import { expect } from 'chai';
 
-jest.unmock('../ui-src/components/app.ctrl');
 import AppCtrl from '../ui-src/components/app.ctrl';
 
-describe('<AppCtrl /> shallow', () => {
+describe('shallow(<AppCtrl />)', () => {
   const wrapper = shallow(<AppCtrl />);
   it('checks div count', () => {
-    expect(wrapper.find('div').length).toEqual(3);
+    expect(wrapper.find('div').length).to.equal(2);
   });
-  it('checks br count', () => {
-    expect(wrapper.find('br').length).toEqual(0);
+  it('checks TreeView count', () => {
+    expect(wrapper.find('TreeView').length).to.equal(1);
   });
-  it('checks TreeCtrl count', () => {
-    expect(wrapper.find('TreeCtrl').length).toEqual(1);
-  });
-  it('checks SnipsCtrl count', () => {
-    expect(wrapper.find('SnipsCtrl').length).toEqual(1);
+  it('checks FileView count', () => {
+    expect(wrapper.find('FileView').length).to.equal(1);
   });
 });

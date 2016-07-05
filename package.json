@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "nodemon js/server.js",
-    "test": "jest",
+    "test": "mocha __tests__/.setup.js __tests__/**/*.test.js",
+    "testw": "npm test -- --watch",
     "ww": "webpack --progress --profile --colors --watch",
     "nw": "webpack --progress --profile --colors"
   },
@@ -27,17 +28,20 @@
     "marked": "latest",
     "primus": "latest",
     "primus-emitter": "latest",
+    "remarkable": "latest",
     "serve-favicon": "latest",
     "underscore.string": "latest",
     "ws": "latest"
   },
   "devDependencies": {
     "babel-core": "latest",
-    "babel-jest": "latest",
     "babel-loader": "^6.1.0",
     "babel-preset-es2015": "latest",
     "babel-preset-stage-0": "latest",
     "babel-preset-react": "latest",
+    "babel-register": "latest",
+    "chai": "latest",
+    "chai-http": "latest",
     "css-loader": "latest",
     "electron-prebuilt": "*",
     "enzyme": "latest",
@@ -45,22 +49,15 @@
     "file-loader": "latest",
     "gulp": "latest",
     "gulp-shell": "latest",
-    "jest-cli": "latest",
-    "react-addons-test-utils": "^15.0.0",
+    "jsdom": "latest",
+    "mocha": "latest",
     "react": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-remarkable": "latest",
     "reflux": "latest",
+    "sinon": "latest",
     "traverse": "latest",
     "webpack": "latest"
-  },
-  "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "unmockedModulePathPatterns": [
-      "enzyme",
-      "react",
-      "react-addons-test-utils"
-    ],
-    "verbose": true
   }
 }

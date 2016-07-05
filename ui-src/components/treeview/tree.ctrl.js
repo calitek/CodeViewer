@@ -20,22 +20,19 @@ class TreeCtrlRender extends React.Component {
     return (
       <div id='TreeCtrlRenderSty' style={TreeCtrlRenderSty}>
         <JButton btn={readTreeBtn} parentClickHandler={this.clickHandler} />
-        <TreeList data={this.state.treeData.data} currentTreeNode={this.state.treeData.currentTreeNode} />
+        <TreeList data={this.state.treeData.data} />
       </div>
     );
   }
 }
 
-export default class TreeCtrl extends TreeCtrlRender {
-  state = {
-    treeData: {
-      data: [],
-      currentTreeNode: {}
-    }
-  };
+function getState() { return {treeData: FileListStore.getTreeData()}; }
+
+export default class TreeView extends TreeCtrlRender {
+  state = getState();
 
   clickHandler = () => { Actions.apiReadTree(); };
   componentDidMount = () => { this.unsubscribe = FileListStore.listen(this.storeDidChange); };
   componentWillUnmount = () => { this.unsubscribe(); };
-  storeDidChange = () => { this.setState({treeData: FileListStore.getTreeData()}); };
+  storeDidChange = () => { this.setState(getState()); };
 }

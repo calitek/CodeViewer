@@ -3,6 +3,9 @@
 let getSetData = require('./routes/GetSetData');
 let readTree = require('./routes/readTree');
 
+// The get and got nulls are for the event parameter that ipc calls
+// require.
+
 module.exports = function(socket) {
 
   let onReadTree = function() { readTree(null, onGetFileList); };
