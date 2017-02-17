@@ -1,22 +1,19 @@
 'use strict';
 
-let Emitter = require('primus-emitter');
-let express = require('express');
-let favicon = require('serve-favicon');
-let path = require('path');
+const express = require('express');
+const app = express();
+const server = require('http').Server(app);
+const ioServer = require('socket.io')(server);
+const favicon = require('serve-favicon');
 
-let Primus = require('primus');
-let socketCallBack = function(socket){ require('./mainskt.js')(socket); };
+const path = require('path');
+const port = Number(process.env.CODEVIEWERPORT || 3800);
 
-let port = Number(process.env.CODEVIEWERPORT || 3800);
+server.listen(port);
 
-let app = express();
-let server = app.listen(port);
+const socketCallBack = function(socket){ require('./mainskt')(socket); };
 
-let sio = new Primus(server, { transformer: 'websockets', parser: 'JSON' });
-sio.use('emitter', Emitter);
-
-sio.on('connection', socketCallBack);
+ioServer.on('connection', socketCallBack);
 
 app.use('/', express.static('ui-dist'));
 app.use(favicon(path.join(__dirname, '..', 'ui-dist', 'img', 'favicon.ico')));

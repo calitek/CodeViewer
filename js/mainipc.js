@@ -8,14 +8,14 @@ module.exports = function(socket) {
   let onReadTree = function(event) { readTree(event, onGetFileList); };
   socket.on('client:readTree', onReadTree);
 
-  let getFileDone = function(event, data){ event.sender.send('server:GotFile', data); };
-  let onGetFile = function(event, data) { getSetData.getFile(event, data, getFileDone); };
-  socket.on('client:getFile', onGetFile);
+  let getFileDataDone = function(event, data){ event.sender.send('server:GetFileDataDone', data); };
+  let onGetFile = function(event, data) { getSetData.getFileData(event, data, getFileDataDone); };
+  socket.on('client:getFileData', onGetFile);
 
-  let getFileListDone = function(event, data){ event.sender.send('server:GotFileList', data); };
-  let onGetFileList = function(event){ getSetData.getFileList(event, getFileListDone); };
-  socket.on('client:getFileList', onGetFileList);
+  let getTreeDataDone = function(event, data){ event.sender.send('server:GetTreeDataDone', data); };
+  let onGetFileList = function(event){ getSetData.getTreeData(event, getTreeDataDone); };
+  socket.on('client:getTreeData', onGetFileList);
 
-  let onSetFileList = function(event, data){ getSetData.setFileList(data); };
-  socket.on('client:setFileList', onSetFileList);
+  let onSetFileList = function(event, data){ getSetData.setTreeData(data); };
+  socket.on('client:setTreeData', onSetFileList);
 };

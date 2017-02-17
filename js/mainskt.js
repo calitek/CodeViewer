@@ -8,17 +8,17 @@ let readTree = require('./routes/readTree');
 
 module.exports = function(socket) {
 
-  let onReadTree = function() { readTree(null, onGetFileList); };
+  let onReadTree = function() { readTree(null, onGetTreeData); };
   socket.on('client:readTree', onReadTree);
 
-  let getFileDone = function(event, data){ socket.send('server:GotFile', null, data); };
-  let onGetFile = function(data) { getSetData.getFile(null, data, getFileDone); };
-  socket.on('client:getFile', onGetFile);
+  let getFileDataDone = function(event, data){ socket.emit('server:GetFileDataDone', data); };
+  let onGetFileData = function(data) { getSetData.getFileData(null, data, getFileDataDone); };
+  socket.on('client:getFileData', onGetFileData);
 
-  let getFileListDone = function(event, data){ socket.send('server:GotFileList', null, data); };
-  let onGetFileList = function(){ getSetData.getFileList(null, getFileListDone); };
-  socket.on('client:getFileList', onGetFileList);
+  let getTreeDataDone = function(event, data){ socket.emit('server:GetTreeDataDone', data); };
+  let onGetTreeData = function(){ getSetData.getTreeData(null, getTreeDataDone); };
+  socket.on('client:getTreeData', onGetTreeData);
 
-  let onSetFileList = function(data){ getSetData.setFileList(data); };
-  socket.on('client:setFileList', onSetFileList);
+  let onSetTreeData = function(data){ getSetData.setTreeData(data); };
+  socket.on('client:setTreeData', onSetTreeData);
 };

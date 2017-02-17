@@ -6,58 +6,62 @@
   "main": "main.js",
   "author": {
     "name": "Janaka Stevens",
-    "email": "jmstevens@calitek.com"
+    "email": "jmstevens@jmarkstevens.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calitek/CodeViewer.git"
+    "url": "git+https://github.com/jmarkstevens/CodeViewer.git"
   },
   "scripts": {
-    "start": "nodemon js/server.js",
+    "start": "nodemon --watch js js/server.js",
     "test": "mocha __tests__/.setup.js __tests__/**/*.test.js",
     "testw": "npm test -- --watch",
-    "ww": "webpack --progress --profile --colors --watch",
-    "nw": "webpack --progress --profile --colors"
+    "ww": "webpack --progress --profile --colors --env.noMinimize --watch",
+    "nw": "webpack --progress --profile --colors --env.noMinimize",
+    "build": "webpack --progress --profile --colors --env.production"
   },
   "dependencies": {
     "async": "latest",
     "express": "latest",
-    "highlight.js": "latest",
-    "js-yaml": "latest",
-    "lodash": "latest",
+    "highlights": "latest",
     "marked": "latest",
-    "primus": "latest",
-    "primus-emitter": "latest",
     "remarkable": "latest",
     "serve-favicon": "latest",
-    "underscore.string": "latest",
-    "ws": "latest"
+    "socket.io": "latest"
   },
   "devDependencies": {
+    "electron-prebuilt": "*",
+    "gulp": "latest",
+    "gulp-shell": "latest",
+
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-redux": "latest",
+    "react-remarkable": "latest",
+    "redux": "latest",
+    "redux-logger": "latest",
+    "redux-thunk": "latest",
+    "traverse": "latest",
+
     "babel-core": "latest",
     "babel-loader": "^6.1.0",
     "babel-preset-es2015": "latest",
     "babel-preset-stage-0": "latest",
     "babel-preset-react": "latest",
+    "css-loader": "latest",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "latest",
+    "loader-utils": "latest",
+    "style-loader": "^0.13.1",
+    "webpack": "latest",
+
     "babel-register": "latest",
     "chai": "latest",
     "chai-http": "latest",
-    "css-loader": "latest",
-    "electron-prebuilt": "*",
     "enzyme": "latest",
-    "extract-text-webpack-plugin": "latest",
-    "file-loader": "latest",
-    "gulp": "latest",
-    "gulp-shell": "latest",
     "jsdom": "latest",
     "mocha": "latest",
-    "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "react-remarkable": "latest",
-    "reflux": "latest",
-    "sinon": "latest",
-    "traverse": "latest",
-    "webpack": "latest"
+    "sinon": "latest"
   }
 }

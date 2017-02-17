@@ -1,0 +1,14 @@
+{
+  "lib": [
+    "async",
+    "lodash",
+    "react",
+    "react-dom",
+    "react-redux",
+    "react-remarkable",
+    "redux",
+    "redux-logger",
+    "redux-thunk",
+    "traverse"
+  ]
+}

@@ -5,11 +5,11 @@
   },
   "linux": {
     "readRoot": "/var/www/CodeView/",
-    "dataRoot": "/var/www/CodeView/CodeViewer/data/"
+    "dataRoot": "/var/www/CodeViewer/data/"
   },
   "win32": {
     "readRoot": "/Users/janaka/Kykas/Projects/",
-    "dataRoot": "K:/Projects/CodeViewer/data/"
+    "dataRoot": "/Users/janaka/Kykas/Projects/CodeViewer/data/"
   },
-  "winProjectRoot": "K:/Projects/CodeViewer"
+  "winProjectRoot": "/Users/janaka/Kykas/Projects/CodeViewer"
 }

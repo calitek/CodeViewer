@@ -10,7 +10,7 @@ let rootDataPath = config.macDataRoot;
 if (process.platform == 'win32') rootDataPath = config.winDataRoot;
 
 const {ipcMain} = electron;
-require('./js/mainipc.js')(ipcMain);
+require('./js/mainipc')(ipcMain);
 
 let mainWindow = null;
 let mainWindowOptions = {
@@ -25,7 +25,8 @@ app.on('ready', function() {
 
   let windowStatePath = rootDataPath + 'windowstate.json';
   let windowState = {};
-  if (false) mainWindow.openDevTools();
+  const openDevTools = 0;
+  if (openDevTools) mainWindow.openDevTools();
   let jsonReadCallBack = function(err, data){
     if (err) console.log('error opening windowstate');
     else {
