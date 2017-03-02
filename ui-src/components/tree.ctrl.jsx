@@ -4,8 +4,7 @@ import {bindActionCreators} from 'redux';
 
 import {selectTreeNode, setTreeNodeClosed} from '../store/tree/tree.Actions';
 import {apiReadTree} from '../store/api/api.Actions';
-import TreeView from './common/jTreeView';
-import JButton from './common/jButton';
+import {JButton, JTreeView} from 'jms-react-components';
 
 const TreeCtrlRenderSty = {
   height: 'calc(100% - 19px)',
@@ -20,24 +19,22 @@ const options = {
 
 let readTreeBtn = {buttonid: 'readTree', text: 'Read Tree'};
 
-class TreeCtrl extends React.Component {
-  iconHandler = (node) => { this.props.setTreeNodeClosed(node); };
-  clickHandler = (node) => { this.props.selectTreeNode(node); };
-  readTreeHandler = () => { this.props.apiReadTree(); };
-  render() {
-    return (
-      <div id="TreeCtrlRenderSty" style={TreeCtrlRenderSty}>
-        <JButton btn={readTreeBtn} parentClickHandler={this.readTreeHandler} />
-        <TreeView
-          data={this.props.treeState.treeData}
-          options={options}
-          iconClick={this.iconHandler}
-          titleClick={this.clickHandler}
-        />
-      </div>
-    );
-  }
-}
+const TreeCtrl = (props) => {
+  const iconHandler = (node) => { props.setTreeNodeClosed(node); };
+  const clickHandler = (node) => { props.selectTreeNode(node); };
+  const readTreeHandler = () => { props.apiReadTree(); };
+  return (
+    <div id="TreeCtrlRenderSty" style={TreeCtrlRenderSty}>
+      <JButton btn={readTreeBtn} parentClickHandler={readTreeHandler} />
+      <JTreeView
+        data={props.treeState.treeData}
+        options={options}
+        iconClick={iconHandler}
+        titleClick={clickHandler}
+      />
+    </div>
+  );
+};
 
 function mapStateToProps(store) { return {treeState: store.treeState}; }
 

@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "nodemon --watch js js/server.js",
+    "e": "electron .",
     "test": "mocha __tests__/.setup.js __tests__/**/*.test.js",
     "testw": "npm test -- --watch",
     "ww": "webpack --progress --profile --colors --env.noMinimize --watch",
@@ -30,9 +31,8 @@
     "socket.io": "latest"
   },
   "devDependencies": {
-    "electron-prebuilt": "*",
-    "gulp": "latest",
-    "gulp-shell": "latest",
+    "electron": "latest",
+    "jms-react-components": "file:/Users/janaka/Kykas/Projects/jms-react-components",
 
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
