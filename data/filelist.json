@@ -385,13 +385,6 @@
       },
       {
         "children": [],
-        "nodeid": "BergstromGardens/gulpfile.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "gulpfile.js"
-      },
-      {
-        "children": [],
         "nodeid": "BergstromGardens/package.json",
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
@@ -414,7 +407,7 @@
     ],
     "nodeid": "BergstromGardens",
     "rootpath": "/Users/janaka/Kykas/Projects/",
-    "selected": false,
+    "selected": true,
     "title": "BergstromGardens",
     "closed": true
   },
@@ -754,13 +747,6 @@
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
         "title": "config.json"
-      },
-      {
-        "children": [],
-        "nodeid": "Clippets/gulpfile.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "gulpfile.js"
       },
       {
         "children": [],
@@ -1119,13 +1105,6 @@
       },
       {
         "children": [],
-        "nodeid": "CodeViewer/gulpfile.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "gulpfile.js"
-      },
-      {
-        "children": [],
         "nodeid": "CodeViewer/main.js",
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
@@ -1190,38 +1169,6 @@
             "children": [
               {
                 "children": [
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "JMarkStevens/ui-src/components/common/Button/jButton.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jButton.jsx"
-                      }
-                    ],
-                    "nodeid": "JMarkStevens/ui-src/components/common/Button",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Button",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "JMarkStevens/ui-src/components/common/PageIndicator/jPageIndicator.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jPageIndicator.jsx"
-                      }
-                    ],
-                    "nodeid": "JMarkStevens/ui-src/components/common/PageIndicator",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "PageIndicator",
-                    "closed": true
-                  },
                   {
                     "children": [],
                     "nodeid": "JMarkStevens/ui-src/components/common/app.colors.js",
@@ -2659,6 +2606,13 @@
                 "rootpath": "/Users/janaka/Kykas/Projects/",
                 "selected": false,
                 "title": "specieslist.json"
+              },
+              {
+                "children": [],
+                "nodeid": "PalmApp/data/dist/specieslistZ.json",
+                "rootpath": "/Users/janaka/Kykas/Projects/",
+                "selected": false,
+                "title": "specieslistZ.json"
               }
             ],
             "nodeid": "PalmApp/data/dist",
@@ -2801,6 +2755,20 @@
                 "rootpath": "/Users/janaka/Kykas/Projects/",
                 "selected": false,
                 "title": "readWrite3a.json"
+              },
+              {
+                "children": [],
+                "nodeid": "PalmApp/data/misc-out/specieslistZ.json",
+                "rootpath": "/Users/janaka/Kykas/Projects/",
+                "selected": false,
+                "title": "specieslistZ.json"
+              },
+              {
+                "children": [],
+                "nodeid": "PalmApp/data/misc-out/zzlist.json",
+                "rootpath": "/Users/janaka/Kykas/Projects/",
+                "selected": false,
+                "title": "zzlist.json"
               }
             ],
             "nodeid": "PalmApp/data/misc-out",
@@ -2813,10 +2781,10 @@
             "children": [
               {
                 "children": [],
-                "nodeid": "PalmApp/data/src/FilterListOptions.json",
+                "nodeid": "PalmApp/data/src/FilterListPreCount.json",
                 "rootpath": "/Users/janaka/Kykas/Projects/",
                 "selected": false,
-                "title": "FilterListOptions.json"
+                "title": "FilterListPreCount.json"
               },
               {
                 "children": [],
@@ -2917,6 +2885,13 @@
               },
               {
                 "children": [],
+                "nodeid": "PalmApp/js/misc/palmlistZ.js",
+                "rootpath": "/Users/janaka/Kykas/Projects/",
+                "selected": false,
+                "title": "palmlistZ.js"
+              },
+              {
+                "children": [],
                 "nodeid": "PalmApp/js/misc/testexif.js",
                 "rootpath": "/Users/janaka/Kykas/Projects/",
                 "selected": false,
@@ -2980,149 +2955,11 @@
               {
                 "children": [
                   {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/Button/jButton.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jButton.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/Button",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Button",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/DropDowns/Icon.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "Icon.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/DropDowns/jDropMenu.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jDropMenu.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/DropDowns/jDropSelect.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jDropSelect.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/DropDowns/jMultiSelect.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jMultiSelect.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/DropDowns",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "DropDowns",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/FormInput/jInput.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jInput.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/FormInput",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "FormInput",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/Sliders/jRangeSelector.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jRangeSelector.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/Sliders/jSlider.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jSlider.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/Sliders",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Sliders",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/Tooltip/jTooltip.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jTooltip.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/Tooltip",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Tooltip",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/TreeViews/jTreeView.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jTreeView.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmApp/ui-src/components/common/TreeViews/jTreeViewB.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jTreeViewB.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmApp/ui-src/components/common/TreeViews",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "TreeViews",
-                    "closed": true
-                  },
-                  {
                     "children": [],
                     "nodeid": "PalmApp/ui-src/components/common/app.style.jsx",
                     "rootpath": "/Users/janaka/Kykas/Projects/",
                     "selected": false,
                     "title": "app.style.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmApp/ui-src/components/common/nav.bar.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "nav.bar.jsx"
                   }
                 ],
                 "nodeid": "PalmApp/ui-src/components/common",
@@ -3438,13 +3275,6 @@
       },
       {
         "children": [],
-        "nodeid": "PalmApp/gulpfile.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "gulpfile.js"
-      },
-      {
-        "children": [],
         "nodeid": "PalmApp/package.json",
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
@@ -3469,1041 +3299,6 @@
     "rootpath": "/Users/janaka/Kykas/Projects/",
     "selected": false,
     "title": "PalmApp",
-    "closed": true
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/dist/filterList.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "filterList.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/dist/genuslist.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "genuslist.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/dist/imagelist.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "imagelist.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/dist/specieslist.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "specieslist.json"
-              }
-            ],
-            "nodeid": "PalmInfo/data/dist",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "dist",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/Adobe_com.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "Adobe_com.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/IPTC-Std2016.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "IPTC-Std2016.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/IPTC2016.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "IPTC2016.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_AcA_01.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_AcA_01.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_Adobe_com-PalmInfo.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_Adobe_com-PalmInfo.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_BrAr_07.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_BrAr_07.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_WaR_04.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_WaR_04.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_WaR_04jms.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_WaR_04jms.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_genus.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_genus.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_misc-src.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_misc-src.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_readWrite0.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_readWrite0.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/NodeExiftool_readWrite1.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "NodeExiftool_readWrite1.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/adobeexif.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "adobeexif.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/genus.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "genus.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/iptc-palmInfo.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "iptc-palmInfo.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/iptc_palmInfo.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "iptc_palmInfo.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/readWrite2a.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "readWrite2a.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/readWrite2b.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "readWrite2b.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/misc-out/readWrite3a.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "readWrite3a.json"
-              }
-            ],
-            "nodeid": "PalmInfo/data/misc-out",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "misc-out",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/src/FilterListOptions.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "FilterListOptions.json"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/data/src/palmlist.json",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "palmlist.json"
-              }
-            ],
-            "nodeid": "PalmInfo/data/src",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "src",
-            "closed": true
-          }
-        ],
-        "nodeid": "PalmInfo/data",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "data",
-        "closed": true
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/filterListCount.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "filterListCount.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/imageCaptions.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "imageCaptions.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/imagelist.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "imagelist.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/palmlist.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "palmlist.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/prepinfo.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "prepinfo.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/admin/prepinfo.text.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "prepinfo.text.js"
-              }
-            ],
-            "nodeid": "PalmInfo/js/admin",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "admin",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/misc/exifone.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "exifone.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/misc/gardenexif.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "gardenexif.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/misc/palmlistC.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "palmlistC.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/misc/testexif.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "testexif.js"
-              }
-            ],
-            "nodeid": "PalmInfo/js/misc",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "misc",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/routes/getbodypiclist.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "getbodypiclist.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/js/routes/getjsondata.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "getjsondata.js"
-              }
-            ],
-            "nodeid": "PalmInfo/js/routes",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "routes",
-            "closed": true
-          },
-          {
-            "children": [],
-            "nodeid": "PalmInfo/js/routes.js",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "routes.js"
-          },
-          {
-            "children": [],
-            "nodeid": "PalmInfo/js/server.js",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "server.js"
-          }
-        ],
-        "nodeid": "PalmInfo/js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "js",
-        "closed": true
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/about/about.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "about.page.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/about/about.text.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "about.text.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/about",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "about",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/articles/articles.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "articles.page.jsx"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/articles",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "articles",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/gallery/gallery.style.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "gallery.style.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/gallery/jGallery.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jGallery.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/gallery/jThumbs.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jThumbs.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/gallery/listitem.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "listitem.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/gallery/shortcuts.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "shortcuts.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/common/gallery",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "gallery",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/jSelect/Icon.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "Icon.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/jSelect/jmSelect.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jmSelect.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/common/jSelect",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jSelect",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/mxRange/jRangeSelector.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jRangeSelector.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/common/mxRange",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "mxRange",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/common/mxSlider/jSlider.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jSlider.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/common/mxSlider",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "mxSlider",
-                    "closed": true
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/app.style.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "app.style.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jButton.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jButton.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jDropMenu.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jDropMenu.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jDropSelect.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jDropSelect.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jInput.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jInput.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jTooltip.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jTooltip.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/jTreeViewB.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jTreeViewB.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/nav.bar.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "nav.bar.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/common/nav.menu.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "nav.menu.jsx"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/common",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "common",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/garden/garden.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "garden.page.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/garden/garden.text.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "garden.text.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/garden",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "garden",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/help/help.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "help.page.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/help/help.text.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "help.text.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/help",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "help",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/about.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "about.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/articles.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "articles.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/garden.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "garden.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/help.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "help.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/home.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "home.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/identify.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "identify.popup.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/pop.style.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "pop.style.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/home/popups/species.popup.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "species.popup.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/home/popups",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "popups",
-                    "closed": true
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/home/home.logo.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "home.logo.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/home/home.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "home.page.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/home/home.style.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "home.style.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/home",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "home",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/identify/identify.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "identify.page.jsx"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/identify",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "identify",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/filter.ctrl.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "filter.ctrl.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/header.ctrl.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "header.ctrl.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/jump.ctrl.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jump.ctrl.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/modal.help.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "modal.help.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/modal.select.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "modal.select.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/header/tips.text.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "tips.text.js"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/species/header",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "header",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.actions.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.actions.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.children.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.children.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.children.list.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.children.list.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.cover.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.cover.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.ctrl.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.ctrl.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.info.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.info.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "PalmInfo/ui-src/components/species/info_column/info.pic.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "info.pic.jsx"
-                      }
-                    ],
-                    "nodeid": "PalmInfo/ui-src/components/species/info_column",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "info_column",
-                    "closed": true
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/species/species.page.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "species.page.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/species/thumb.column.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "thumb.column.jsx"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/components/species/thumb.column.list.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "thumb.column.list.jsx"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/components/species",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "species",
-                "closed": true
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/ui-src/components/app.ctrl.jsx",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "app.ctrl.jsx"
-              }
-            ],
-            "nodeid": "PalmInfo/ui-src/components",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "components",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [],
-                "nodeid": "PalmInfo/ui-src/css/index.css",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "index.css"
-              }
-            ],
-            "nodeid": "PalmInfo/ui-src/css",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "css",
-            "closed": true
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/app/app.actions.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "app.actions.js"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/app/app.reducer.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "app.reducer.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/store/app",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "app",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/info/info.actions.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "info.actions.js"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/info/info.reducer.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "info.reducer.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/store/info",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "info",
-                "closed": true
-              },
-              {
-                "children": [
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/pics/pics.actions.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "pics.actions.js"
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "PalmInfo/ui-src/store/pics/pics.reducer.js",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "pics.reducer.js"
-                  }
-                ],
-                "nodeid": "PalmInfo/ui-src/store/pics",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "pics",
-                "closed": true
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/ui-src/store/App.Store.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "App.Store.js"
-              },
-              {
-                "children": [],
-                "nodeid": "PalmInfo/ui-src/store/api.actions.js",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "api.actions.js"
-              }
-            ],
-            "nodeid": "PalmInfo/ui-src/store",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "store",
-            "closed": true
-          },
-          {
-            "children": [],
-            "nodeid": "PalmInfo/ui-src/app.jsx",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "app.jsx"
-          },
-          {
-            "children": [],
-            "nodeid": "PalmInfo/ui-src/index.html",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "index.html"
-          }
-        ],
-        "nodeid": "PalmInfo/ui-src",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "ui-src",
-        "closed": true
-      },
-      {
-        "children": [],
-        "nodeid": "PalmInfo/gulpfile.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "gulpfile.js"
-      },
-      {
-        "children": [],
-        "nodeid": "PalmInfo/package.json",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "package.json"
-      },
-      {
-        "children": [],
-        "nodeid": "PalmInfo/webpack.config.js",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "webpack.config.js"
-      },
-      {
-        "children": [],
-        "nodeid": "PalmInfo/webpack.config.json",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "webpack.config.json"
-      }
-    ],
-    "nodeid": "PalmInfo",
-    "rootpath": "/Users/janaka/Kykas/Projects/",
-    "selected": false,
-    "title": "PalmInfo",
     "closed": true
   },
   {
@@ -7328,163 +6123,179 @@
                   {
                     "children": [
                       {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Button/index.js",
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Button/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Button/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Button",
                         "rootpath": "/Users/janaka/Kykas/Projects/",
                         "selected": false,
-                        "title": "index.js"
+                        "title": "Button",
+                        "closed": false
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/DropDown/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/DropDown/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/DropDown",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "DropDown",
+                        "closed": true
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Gallery/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Gallery/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Gallery",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "Gallery",
+                        "closed": true
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Inputs/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Inputs/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/Inputs",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "Inputs",
+                        "closed": true
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/ProgressBar/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/ProgressBar/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/ProgressBar",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "ProgressBar",
+                        "closed": true
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/RangeSlider/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/RangeSlider/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/RangeSlider",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "RangeSlider",
+                        "closed": true
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/TreeView/index.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "index.js"
+                          },
+                          {
+                            "children": [],
+                            "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/TreeView/styles.js",
+                            "rootpath": "/Users/janaka/Kykas/Projects/",
+                            "selected": false,
+                            "title": "styles.js"
+                          }
+                        ],
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/TreeView",
+                        "rootpath": "/Users/janaka/Kykas/Projects/",
+                        "selected": false,
+                        "title": "TreeView",
+                        "closed": true
                       },
                       {
                         "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Button/styles.js",
+                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common/return.btn.js",
                         "rootpath": "/Users/janaka/Kykas/Projects/",
                         "selected": false,
-                        "title": "styles.js"
+                        "title": "return.btn.js"
                       }
                     ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Button",
+                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/common",
                     "rootpath": "/Users/janaka/Kykas/Projects/",
                     "selected": false,
-                    "title": "Button",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/DropDown/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/DropDown/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/DropDown",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "DropDown",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Gallery/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Gallery/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Gallery",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Gallery",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Inputs/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Inputs/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/Inputs",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Inputs",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/ProgressBar/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/ProgressBar/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/ProgressBar",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "ProgressBar",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/RangeSlider/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/RangeSlider/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/RangeSlider",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "RangeSlider",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/TreeView/index.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "index.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/TreeView/styles.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "styles.js"
-                      }
-                    ],
-                    "nodeid": "ReactNativePatterns/JCommon/ui-src/components/TreeView",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "TreeView",
-                    "closed": true
+                    "title": "common",
+                    "closed": false
                   },
                   {
                     "children": [
@@ -7539,13 +6350,6 @@
                       },
                       {
                         "children": [],
-                        "nodeid": "ReactNativePatterns/JCommon/ui-src/components/pages/return.btn.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "return.btn.js"
-                      },
-                      {
-                        "children": [],
                         "nodeid": "ReactNativePatterns/JCommon/ui-src/components/pages/treeview.page.js",
                         "rootpath": "/Users/janaka/Kykas/Projects/",
                         "selected": false,
@@ -7556,7 +6360,7 @@
                     "rootpath": "/Users/janaka/Kykas/Projects/",
                     "selected": false,
                     "title": "pages",
-                    "closed": true
+                    "closed": false
                   },
                   {
                     "children": [],
@@ -7570,7 +6374,7 @@
                 "rootpath": "/Users/janaka/Kykas/Projects/",
                 "selected": false,
                 "title": "components",
-                "closed": true
+                "closed": false
               },
               {
                 "children": [
@@ -7607,7 +6411,7 @@
             "rootpath": "/Users/janaka/Kykas/Projects/",
             "selected": false,
             "title": "ui-src",
-            "closed": true
+            "closed": false
           },
           {
             "children": [],
@@ -7642,54 +6446,17 @@
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
         "title": "JCommon",
-        "closed": true
+        "closed": false
       }
     ],
     "nodeid": "ReactNativePatterns",
     "rootpath": "/Users/janaka/Kykas/Projects/",
     "selected": false,
     "title": "ReactNativePatterns",
-    "closed": true
+    "closed": false
   },
   {
     "children": [
-      {
-        "children": [
-          {
-            "children": [],
-            "nodeid": "ReactPatterns/Common/README.md",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "README.md"
-          },
-          {
-            "children": [],
-            "nodeid": "ReactPatterns/Common/config.json",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "config.json"
-          },
-          {
-            "children": [],
-            "nodeid": "ReactPatterns/Common/gulpfile.js",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "gulpfile.js"
-          },
-          {
-            "children": [],
-            "nodeid": "ReactPatterns/Common/package.json",
-            "rootpath": "/Users/janaka/Kykas/Projects/",
-            "selected": false,
-            "title": "package.json"
-          }
-        ],
-        "nodeid": "ReactPatterns/Common",
-        "rootpath": "/Users/janaka/Kykas/Projects/",
-        "selected": false,
-        "title": "Common",
-        "closed": true
-      },
       {
         "children": [
           {
@@ -35776,6 +34543,20 @@
       },
       {
         "children": [],
+        "nodeid": "jms-react-components/.eslintrc.js",
+        "rootpath": "/Users/janaka/Kykas/Projects/",
+        "selected": false,
+        "title": ".eslintrc.js"
+      },
+      {
+        "children": [],
+        "nodeid": "jms-react-components/README.md",
+        "rootpath": "/Users/janaka/Kykas/Projects/",
+        "selected": false,
+        "title": "README.md"
+      },
+      {
+        "children": [],
         "nodeid": "jms-react-components/package.json",
         "rootpath": "/Users/janaka/Kykas/Projects/",
         "selected": false,
@@ -35833,82 +34614,6 @@
         "children": [
           {
             "children": [
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Button/jButton.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jButton.jsx"
-                      }
-                    ],
-                    "nodeid": "jmsExamples/ui-src/components/common/Button",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Button",
-                    "closed": true
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Gallery/gallery.style.js",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "gallery.style.js"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Gallery/jGallery.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jGallery.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Gallery/jThumbs.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "jThumbs.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Gallery/listitem.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "listitem.jsx"
-                      },
-                      {
-                        "children": [],
-                        "nodeid": "jmsExamples/ui-src/components/common/Gallery/shortcuts.jsx",
-                        "rootpath": "/Users/janaka/Kykas/Projects/",
-                        "selected": false,
-                        "title": "shortcuts.jsx"
-                      }
-                    ],
-                    "nodeid": "jmsExamples/ui-src/components/common/Gallery",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "Gallery",
-                    "closed": true
-                  },
-                  {
-                    "children": [],
-                    "nodeid": "jmsExamples/ui-src/components/common/jButton.jsx",
-                    "rootpath": "/Users/janaka/Kykas/Projects/",
-                    "selected": false,
-                    "title": "jButton.jsx"
-                  }
-                ],
-                "nodeid": "jmsExamples/ui-src/components/common",
-                "rootpath": "/Users/janaka/Kykas/Projects/",
-                "selected": false,
-                "title": "common",
-                "closed": true
-              },
               {
                 "children": [],
                 "nodeid": "jmsExamples/ui-src/components/app.ctrl.jsx",

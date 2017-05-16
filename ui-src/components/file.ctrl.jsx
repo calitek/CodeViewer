@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-let FileViewCtrlRenderSty = {
+let FileViewSty = {
   backgroundColor: '#232a1f',
   color: '#ccc',
   margin: '5px 20px',
@@ -20,7 +20,7 @@ function FileView({fileState}) {
   else htmlDivSty.overflow = 'auto';
   let fileHtml = {__html: fileState.fileData};
   return (
-    <div id="FileViewCtrlRenderSty" style={FileViewCtrlRenderSty}>
+    <div id="FileViewCtrlRenderSty" style={FileViewSty}>
       <div id="FileCtrlSty" style={FileCtrlSty}>
         <div dangerouslySetInnerHTML={fileHtml} style={htmlDivSty} />
       </div>

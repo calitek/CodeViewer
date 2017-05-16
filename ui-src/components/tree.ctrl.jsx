@@ -6,9 +6,11 @@ import {selectTreeNode, setTreeNodeClosed} from '../store/tree/tree.Actions';
 import {apiReadTree} from '../store/api/api.Actions';
 import {JButton, JTreeView} from 'jms-react-components';
 
-const TreeCtrlRenderSty = {
+const TreeCtrlSty = {
+  flexGrow: '1',
   height: 'calc(100% - 19px)',
   overflowX: 'auto',
+  resize: 'horizontal',
   width: '350px'
 };
 
@@ -24,7 +26,7 @@ const TreeCtrl = (props) => {
   const clickHandler = (node) => { props.selectTreeNode(node); };
   const readTreeHandler = () => { props.apiReadTree(); };
   return (
-    <div id="TreeCtrlRenderSty" style={TreeCtrlRenderSty}>
+    <div id="TreeCtrl" style={TreeCtrlSty}>
       <JButton btn={readTreeBtn} parentClickHandler={readTreeHandler} />
       <JTreeView
         data={props.treeState.treeData}
