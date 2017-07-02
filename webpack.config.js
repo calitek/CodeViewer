@@ -21,7 +21,6 @@ module.exports = (env) => {
   const SRC_PATH = path.resolve(ROOT_PATH, './ui-src');
   const DIST_PATH = path.resolve(ROOT_PATH, './ui-dist');
 
-
   return {
     context: SRC_PATH,
     entry: {
