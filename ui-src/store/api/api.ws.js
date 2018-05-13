@@ -1,16 +1,25 @@
-import * as fileActions from '../file/file.Actions';
+import getFileDataDone from '../file/file.Actions';
 import * as treeActions from '../tree/tree.Actions';
 
-var socket = null;
+let socket = null;
 
 export function wsMiddleware() {
-  return (next) => (action) => {
+  return next => (action) => {
     if (socket) {
       switch (action.type) {
-        case 'ApiReadTree': socket.emit('client:readTree', {}); break;
-        case 'ApiGetFileData': socket.emit('client:getFileData', action.data); break;
-        case 'ApiGetTreeData': socket.emit('client:getTreeData'); break;
-        case 'ApiSetTreeData': socket.emit('client:setTreeData', action.data); break;
+        case 'ApiReadTree':
+          socket.emit('client:readTree', {});
+          break;
+        case 'ApiGetFileData':
+          socket.emit('client:getFileData', action.data);
+          break;
+        case 'ApiGetTreeData':
+          socket.emit('client:getTreeData');
+          break;
+        case 'ApiSetTreeData':
+          socket.emit('client:setTreeData', action.data);
+          break;
+        default: break;
       }
     }
     return next(action);
@@ -23,7 +32,7 @@ export default function (store) {
   /* eslint-enable */
 
   socket.on('server:GetFileDataDone', (data) => {
-    store.dispatch(fileActions.getFileDataDone(data.fileData));
+    store.dispatch(getFileDataDone(data.fileData));
   });
 
   socket.on('server:GetTreeDataDone', (data) => {

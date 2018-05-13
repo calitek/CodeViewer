@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "babel/object-curly-spacing": "always",
+    "class-methods-use-this": 0,
+    "global-require": "off",
+    "max-len": ["error", 200],
+    "no-cond-assign": [0, "except-parents"],
+    "no-console": "off",
+    "no-multi-spaces": 2,
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 1 }],
+    "no-param-reassign": 0,
+    "no-trailing-spaces": 2,
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-curly-spacing": 0,
+    "react/require-default-props": 0,
+    "react/require-extension": "off",
+    "import/no-extraneous-dependencies": 0
+  },
+  "globals": {
+    "document": false,
+    "fetch": false,
+    "window": false,
+    "FormData": false
+  }
+}

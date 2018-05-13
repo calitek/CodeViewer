@@ -1,7 +1,7 @@
 {
   "darwin": {
-    "readRoot": "/Users/janaka/Kykas/Projects/",
-    "dataRoot": "/Users/janaka/Kykas/Projects/CodeViewer/data/"
+    "readRoot": "/Users/jmarkstevens/Kykas/Projects/",
+    "dataRoot": "/Users/jmarkstevens/Kykas/Projects/CodeViewer/data/"
   },
   "linux": {
     "readRoot": "/var/www/CodeView/",

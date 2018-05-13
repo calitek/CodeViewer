@@ -1,25 +1,30 @@
-'use strict';
 
 const async = require('async');
 const fs = require('fs');
-// let path = require('path');
 
 const config = require('../../config.json');
+
 let configRoot;
 switch (process.platform) {
-  case 'darwin': configRoot = config.darwin; break;
-  case 'linux': configRoot = config.linux; break;
-  case 'win32': configRoot = config.win32; break;
+  case 'darwin':
+    configRoot = config.darwin;
+    break;
+  case 'linux':
+    configRoot = config.linux;
+    break;
+  case 'win32':
+    configRoot = config.win32;
+    break;
 }
 const readRoot = configRoot.readRoot;
 const readRootLength = readRoot.length;
 const dataRoot = configRoot.dataRoot;
 
 function getOrderedFileList(fileList, listFolder) {
-  let dirs = [];
-  let files = [];
+  const dirs = [];
+  const files = [];
   function sep(element) {
-    let filePath = listFolder + '/' + element;
+    const filePath = `${listFolder}/${element}`;
     if (fs.statSync(filePath).isDirectory()) {
       dirs.push(element);
     } else {
@@ -29,19 +34,21 @@ function getOrderedFileList(fileList, listFolder) {
   fileList.forEach(sep);
   dirs.sort();
   files.sort();
-  let outDir = dirs.concat(files);
+  const outDir = dirs.concat(files);
   return outDir;
 }
 
-module.exports = function(event, readTreeDone) {
-
+module.exports = function (readTreeDone) {
   function isDirOk(fileName) {
     let returnIt;
     switch (fileName) {
       case 'node_modules':
       case 'ui-dist':
-      case '.git': returnIt = false; break;
-      default: returnIt = true;
+      case '.git':
+        returnIt = false;
+        break;
+      default:
+        returnIt = true;
     }
     return returnIt;
   }
@@ -59,26 +66,24 @@ module.exports = function(event, readTreeDone) {
   }
 
   function getFileList(listFolder, getFileListDoneCB) {
-    let fileListReturned = [];
+    const fileListReturned = [];
 
     function eachFileNameAction(fileName, eachFileNameDoneCB) {
-      let filePath = listFolder + fileName;
-      let addToList = function(newRecord) {
+      const filePath = listFolder + fileName;
+      const addToList = function (newRecord) {
         fileListReturned.push(newRecord);
         return eachFileNameDoneCB();
       };
 
-      fs.stat(filePath, function (err, stats) {
-        let relPath = listFolder.substr(readRootLength);
-        let nodeid = relPath + fileName;
-        let currentRecord = {
+      fs.stat(filePath, (err, stats) => {
+        const relPath = listFolder.substr(readRootLength);
+        const nodeid = relPath + fileName;
+        const currentRecord = {
           children: [],
           nodeid,
-          rootpath: readRoot,
-          selected: false,
-          title: fileName
+          title: fileName,
         };
-        let handleDirReturn = function(dirList) {
+        const handleDirReturn = function (dirList) {
           if (dirList.length > 0) {
             currentRecord.children = dirList;
             currentRecord.closed = true;
@@ -89,14 +94,12 @@ module.exports = function(event, readTreeDone) {
         };
         if (err) throw err;
         else if (stats.isDirectory()) {
-          if (isDirOk(fileName)) getFileList(filePath + '/', handleDirReturn);
+          if (isDirOk(fileName)) getFileList(`${filePath}/`, handleDirReturn);
           else return eachFileNameDoneCB();
-        }
-        else if (stats.isFile()) {
+        } else if (stats.isFile()) {
           if (isFileOk(fileName)) addToList(currentRecord);
           else return eachFileNameDoneCB();
-        }
-        else return eachFileNameDoneCB();
+        } else return eachFileNameDoneCB();
       });
     }
 
@@ -106,24 +109,26 @@ module.exports = function(event, readTreeDone) {
     }
 
     function getFileListCallBack(err, fileList) {
-      if (err) console.log('getFileListCallBack error: ' + listFolder);
+      if (err) console.log(`getFileListCallBack error: ${listFolder}`);
       else {
-        let orderedFileList = getOrderedFileList(fileList, listFolder);
+        const orderedFileList = getOrderedFileList(fileList, listFolder);
         async.eachSeries(orderedFileList, eachFileNameAction, eachFileNameActionDone);
       }
     }
 
-    let start = function() { fs.readdir(listFolder, getFileListCallBack); };
+    const start = function () {
+      fs.readdir(listFolder, getFileListCallBack);
+    };
 
     start();
   }
 
   function getFileListDone(fileList) {
-    let filePath = dataRoot + '/filelist.json';
+    const filePath = `${dataRoot}/FileTree.json`;
     function writeFileCallBack(err) {
-      if (err) console.log('error saving fileList');
-      console.log('fileList saved');
-      return readTreeDone(event);
+      if (err) console.log('error saving FileTree');
+      console.log('FileTree saved');
+      return readTreeDone();
     }
     fs.writeFile(filePath, JSON.stringify(fileList, null, 2), writeFileCallBack);
   }

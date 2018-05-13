@@ -1,6 +1,6 @@
 {
   "name": "CodeViewer",
-  "version": "1.0.0",
+  "version": "18.5.13",
   "description": "A project viewer app.",
   "license": "MIT",
   "main": "main.js",
@@ -14,54 +14,54 @@
   },
   "scripts": {
     "start": "nodemon --watch js js/server.js",
-    "e": "electron .",
     "test": "mocha __tests__/.setup.js __tests__/**/*.test.js",
     "testw": "npm test -- --watch",
-    "ww": "webpack --progress --profile --colors --env.noMinimize --watch",
-    "nw": "webpack --progress --profile --colors --env.noMinimize",
-    "build": "webpack --progress --profile --colors --env.production"
+    "ww": "webpack --config wp/wp.config.js --progress --profile --colors --env.noMinimize --watch",
+    "nw": "webpack --config wp/wp.config.js --progress --profile --colors --env.noMinimize",
+    "build": "webpack --config wp/wp.config.js --progress --profile --colors --env.production"
   },
   "dependencies": {
     "async": "latest",
     "express": "latest",
+    "extract-text-webpack-plugin": "latest",
     "highlights": "latest",
+    "jms-react-components": "file:../../Patterns/jms-react-components",
+    "lodash": "latest",
     "marked": "latest",
-    "remarkable": "latest",
-    "serve-favicon": "latest",
-    "socket.io": "latest"
-  },
-  "devDependencies": {
-    "electron": "latest",
-    "jms-react-components": "file:/Users/janaka/Kykas/Patterns/jms-react-components",
-
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0",
+    "prop-types": "latest",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-redux": "latest",
     "react-remarkable": "latest",
     "redux": "latest",
     "redux-logger": "latest",
     "redux-thunk": "latest",
+    "remarkable": "latest",
+    "serve-favicon": "latest",
+    "socket.io": "latest",
     "traverse": "latest",
-
+    "webpack": "^3.0.0"
+  },
+  "devDependencies": {
     "babel-core": "latest",
-    "babel-loader": "^6.1.0",
-    "babel-preset-es2015": "latest",
-    "babel-preset-stage-0": "latest",
-    "babel-preset-react": "latest",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "latest",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "latest",
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-find-rules": "^3.2.2",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "file-loader": "latest",
+    "html-webpack-plugin": "^3.2.0",
     "loader-utils": "latest",
-    "style-loader": "^0.13.1",
-    "webpack": "latest",
-
-    "babel-register": "latest",
-    "chai": "latest",
-    "chai-http": "latest",
-    "enzyme": "latest",
-    "jsdom": "latest",
-    "mocha": "latest",
-    "react-addons-test-utils": "^15.0.0",
-    "sinon": "latest"
+    "style-loader": "latest"
   }
 }

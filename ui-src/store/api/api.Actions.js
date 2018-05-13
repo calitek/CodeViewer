@@ -1,4 +1,3 @@
-
-export function apiReadTree() {
-  return {type: 'ApiReadTree'};
+export default function apiReadTree() {
+  return { type: 'ApiReadTree' };
 }

@@ -1,24 +1,40 @@
-'use strict';
 
-let getSetData = require('./routes/GetSetData');
-let readTree = require('./routes/readTree');
+const getSetData = require('./routes/GetSetData');
+const readTree = require('./routes/readTree');
 
-// The get and got nulls are for the event parameter that ipc calls
-// require.
-
-module.exports = function(socket) {
-
-  let onReadTree = function() { readTree(null, onGetTreeData); };
+module.exports = (socket) => {
+  const onReadTree = () => {
+    readTree(onGetTreeData);
+  };
   socket.on('client:readTree', onReadTree);
 
-  let getFileDataDone = function(event, data){ socket.emit('server:GetFileDataDone', data); };
-  let onGetFileData = function(data) { getSetData.getFileData(null, data, getFileDataDone); };
+  const getFileDataDone = (data) => {
+    socket.emit('server:GetFileDataDone', data);
+  };
+  const onGetFileData = (data) => {
+    getSetData.getFileData(data, getFileDataDone);
+  };
   socket.on('client:getFileData', onGetFileData);
 
-  let getTreeDataDone = function(event, data){ socket.emit('server:GetTreeDataDone', data); };
-  let onGetTreeData = function(){ getSetData.getTreeData(null, getTreeDataDone); };
+  const getTreeDataDone = (data) => {
+    if (data) socket.emit('server:GetTreeDataDone', data);
+    else onReadTree();
+  };
+  let onGetTreeData = () => {
+    getSetData.getData('FileTree', getTreeDataDone);
+  };
   socket.on('client:getTreeData', onGetTreeData);
 
-  let onSetTreeData = function(data){ getSetData.setTreeData(data); };
-  socket.on('client:setTreeData', onSetTreeData);
+  const getTreeDataStateDone = (data) => {
+    socket.emit('server:GetTreeDataStateDone', data);
+  };
+  const onGetTreeDataState = () => {
+    getSetData.getData('FileTreeState', getTreeDataStateDone);
+  };
+  socket.on('client:getTreeDataState', onGetTreeDataState);
+
+  const onSetTreeDataState = (data) => {
+    getSetData.setData('FileTreeState', data);
+  };
+  socket.on('client:setTreeDataState', onSetTreeDataState);
 };

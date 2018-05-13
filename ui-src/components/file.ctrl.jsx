@@ -1,24 +1,24 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-let FileViewSty = {
+const FileViewSty = {
   backgroundColor: '#232a1f',
   color: '#ccc',
   margin: '5px 20px',
   overflow: 'auto',
-  width: '100%'
+  width: '100%',
 };
 
-let FileCtrlSty = {
+const FileCtrlSty = {
   marginBottom: '5%',
-  width: '100%'
+  width: '100%',
 };
 
-function FileView({fileState}) {
-  let htmlDivSty = {width: '100%'};
+function FileView({ fileState }) {
+  const htmlDivSty = { width: '100%' };
   if (fileState.fileData.startsWith('<pre>')) htmlDivSty.overflow = 'hidden';
   else htmlDivSty.overflow = 'auto';
-  let fileHtml = {__html: fileState.fileData};
+  const fileHtml = { __html: fileState.fileData };
   return (
     <div id="FileViewCtrlRenderSty" style={FileViewSty}>
       <div id="FileCtrlSty" style={FileCtrlSty}>
@@ -28,6 +28,8 @@ function FileView({fileState}) {
   );
 }
 
-function mapStateToProps(store) { return {fileState: store.fileState}; }
+function mapStateToProps(store) {
+  return { fileState: store.fileState };
+}
 
 export default connect(mapStateToProps)(FileView);
